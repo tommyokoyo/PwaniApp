@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckinActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativelayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme_color"
+        android:paddingTop="40dp"
+        android:paddingBottom="20dp">
+
+        <RelativeLayout
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal"
+                android:text="@string/class_co_ordinates"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp">
+
+            </com.google.android.material.textview.MaterialTextView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginEnd="15dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/latitude"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:background="@drawable/cordinate"
+                android:gravity="start"
+                android:paddingLeft="25dp"
+                android:paddingTop="16dp"
+                android:text="@string/latitude"
+                android:textAlignment="textStart"
+                android:textColor="@color/grey_text"
+                android:textSize="16sp"
+                android:paddingStart="25dp">
+
+            </com.google.android.material.textview.MaterialTextView>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/linerlayoutinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginStart="15dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/longitude"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:background="@drawable/cordinate"
+                android:gravity="start"
+                android:paddingLeft="25dp"
+                android:paddingTop="16dp"
+                android:text="@string/longitude"
+                android:textAlignment="textStart"
+                android:textColor="@color/grey_text"
+                android:textSize="16sp"
+                android:paddingStart="25dp">
+
+            </com.google.android.material.textview.MaterialTextView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/admno"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/relativelayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/textview_back"
+        android:gravity="start"
+        android:paddingLeft="14dp"
+        android:paddingTop="16dp"
+        android:text="@string/admission_number"
+        android:textAlignment="textStart"
+        android:textColor="@color/grey_text"
+        android:textSize="16sp"
+        android:paddingStart="14dp">
+
+    </com.google.android.material.textview.MaterialTextView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/lec_id"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/admno"
+        app:boxCornerRadiusBottomEnd="3dp"
+        app:boxCornerRadiusTopEnd="3dp"
+        app:boxCornerRadiusBottomStart="3dp"
+        app:boxCornerRadiusTopStart="3dp"
+        app:boxStrokeColor="@color/theme_color"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textCapCharacters"
+            android:hint="@string/unit_name">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_details"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lec_id"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp">
+
+        <RelativeLayout
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:boxCornerRadiusBottomEnd="3dp"
+                app:boxCornerRadiusTopEnd="3dp"
+                app:boxCornerRadiusBottomStart="3dp"
+                app:boxCornerRadiusTopStart="3dp"
+                app:boxStrokeColor="@color/theme_color"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textCapCharacters"
+                    android:hint="@string/lecturer_id">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/yearofstudy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:boxCornerRadiusBottomEnd="3dp"
+                app:boxCornerRadiusTopEnd="3dp"
+                app:boxCornerRadiusBottomStart="3dp"
+                app:boxCornerRadiusTopStart="3dp"
+                app:boxStrokeColor="@color/theme_color"
+                app:counterEnabled="true"
+                app:counterMaxLength="10"
+                app:helperTextEnabled="true"
+                app:helperText="@string/helper_text"
+                app:counterTextAppearance="@color/purple_700"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="date"
+                    android:hint="@string/date">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/datelayout"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/relative_details"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:boxCornerRadiusBottomEnd="3dp"
+            app:boxCornerRadiusTopEnd="3dp"
+            app:boxCornerRadiusBottomStart="3dp"
+            app:boxCornerRadiusTopStart="3dp"
+            app:counterEnabled="true"
+            app:counterMaxLength="1"
+            app:boxStrokeColor="@color/theme_color"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:hint="@string/year_of_study"
+                android:gravity="center">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </RelativeLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="210dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/datelayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:hint="@string/submit"
+        android:textColorHint="#FFFFFF"
+        app:cornerRadius="5dp">
+
+    </com.google.android.material.button.MaterialButton>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Pwani App</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="helper_text">DD/MM/YYYY</string>
+    <string name="class_co_ordinates">Class Co-ordinates</string>
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+    <string name="admission_number">Admission Number</string>
+    <string name="unit_name">Unit Name</string>
+    <string name="lecturer_id">Lecturer ID</string>
+    <string name="date">Date</string>
+    <string name="year_of_study">Year Of Study</string>
+    <string name="submit">Submit</string>
+    <string name="student">Student</string>
+    <string name="email">Email</string>
+    <string name="okoyotommy_gmail_com">okoyotommy@gmail.com</string>
+    <string name="change_password">Change Password</string>
+    <string name="logout">Logout</string>
+    <string name="todo">TODO</string>
+    <string-array name="message">
+        <item>Make time your best friend\nand use it appropriately</item>
+        <item>For a bright future,\nyou need to discipline yourself</item>
+        <item>The best preparation for tomorrow\nis to do it today...</item>
+        <item>Great things start with small actions.\nTake that action today!</item>
+    </string-array>
+</resources>
